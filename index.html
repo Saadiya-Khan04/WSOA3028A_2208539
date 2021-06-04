@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="IndexCss.css">
+        <style>
+            img {
+              width: 70%;
+              height: auto;
+            }
+        </style>
+    </head>
 <body>
 
 <header>
-    <h1>
-        Yami Mizuki's Pages of Pain
-        </h1>
-        <h2>
-        The Unsafe Space On The Internet. 
-        </h2>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="AboutPage.html">About</a></li>
+        <li><a href="InformationPosts.html">Info</a></li>
+        <li><a href="RandomContent.html">Content</a></li>
+        <li><a href="ContactInfo.html">Contact</a></li>
+        <li><a href="WhyandHow.html">Why?</a></li>
+    </ul>
+      
 </header>
 
+<section class= "banner">
+</section>
+
+<script type="text/javascript"> 
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0); 
+})
+</script>
+
+<h1>
+    Yami Mizuki's Pages of Pain
+</h1>
+
+ <h2>
+    The Unsafe Space On The Internet. 
+ </h2>
+
 <p>
-I dare you to explore this Trash Content. DO IT!
+I dare you to explore this Trash Content. DO IT! <br>
+<br>
+Also, Please Scroll Down A Bit... :) 
 </p>
 
-<a href="Home.html">Home Page</a>
+<img src="Images/SkullDab.jpg" alt="SkullDab" width="300" height="400">
+
+
 </body>
 </html>

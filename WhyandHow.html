@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="WhyAndHow.Css">
+        <style>
+            img {
+              width: 70%;
+              height: auto;
+            }
+        </style>
+    </head> 
+    
+    <header>
+
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+            <li><a href="InformationPosts.html">Info</a></li>
+            <li><a href="RandomContent.html">Content</a></li>
+            <li><a href="ContactInfo.html">Contact</a></li>
+            <li><a href="WhyandHow.html">Why?</a></li>
+        </ul>
+    </header>
+    
+    <section class= "banner">
+    </section>
+    
+    <script type="text/javascript"> 
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0); 
+    })
+    
+    </script>
+
 <body>
 
-    <header>
+    
         <h1>
             WHY AND HOW?  
         </h1>
-    </header>
-
+    
 <hr>
 
 <p>
@@ -18,9 +50,17 @@ as it is more genuine. It feels more real, although it can be slightly exaggerat
 I am still deciding how this website is going to look, I don't have a definite idea yet. <br>
 Planning a website in advanced is tricky, in my opinion, I love to experiment and go along with the ideas that I find interesting. 
 <br>
+<br>
+My vision for character development will be that the content on this blog changes over time, <br>
+the images will soon start changing to how Yami explores Johannesburg, with more personal content. 
+<br>
+<br>
+For the next Assignment, there should be better background images that relate to the character <br>
+and there should be more about the character and how his life has changed, basically a comparison with a new "About Page".
 
 <hr>
-<a href="Home.html">Back To Home Page</a> 
+
+<img src="Images/Wireframe.png" alt="Wireframe" width="300" height="400">
 
 </p>
 </body>

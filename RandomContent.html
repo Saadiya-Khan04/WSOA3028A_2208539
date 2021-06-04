@@ -8,72 +8,101 @@
               width: 50%;
               height: auto;
             }
-            </style>
+        </style>
+
+        <link rel="stylesheet" href="RandomContent.Css">
+
     </head>
+
+    <header>
+
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+            <li><a href="InformationPosts.html">Info</a></li>
+            <li><a href="RandomContent.html">Content</a></li>
+            <li><a href="ContactInfo.html">Contact</a></li>
+            <li><a href="WhyandHow.html">Why?</a></li>
+        </ul>
+    </header>
+    
+    <section class= "banner">
+    </section>
+    
+    <script type="text/javascript"> 
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0); 
+    })
+    
+    </script>
 
 <body>
 
 <section>
 
-    <header>
+    
         <h1>
             My Trash Content
         </h1>
-    </header>
+    
     
         <hr>
         <p>
         !!! Disclaimer: I have just moved to this beautiful city, although I am trying to adjust to it. <br>
+        <br>
         WATCH THIS SPACE! <br>
-        Soon, I will be uploading more of my adventures here and my blog will be up and running very soon!
+        Soon, I will be uploading more of my adventures here and my blog will be up and running very soon!<br>
+        <br>
+        There will be more content where I actually explore Jhb and take some really cool pictures!
         </p>
         
-        <header>
+        
             <h2>
                 My drawings:
             </h2>
-        </header>
+        
         
         <hr>
-        <header>
+        
             <h3>
                 Here is an INSANE digital sketch of Kaneki from Tokyo Ghoul. I traced something, although it was my first <br>
                 attempt at a digital artwork.
             </h3>
-        </header>
+       
         
         <img src="Images/Kaneki drawing.jpg" alt="Kaneki" width="300" height="400">
 </section> 
 
 <section>
-    <header>
+   
         <h4>
             Let me share something else. How about a cool guy in mask? <br>
             Inspiration from my favourite band, "BRING ME THE HORIZON"!
         </h4>
-    </header>
+    
   
 <img src="Images/Oli Sykes.png" alt="Oliver" width="300" height="400">
 </section>
 
 <section>
-<header>
+
     <h4>
         A bit of a different art style, but a really trippy technique that I have learned <br>
         through digital drawings. A Nebula, perhaps..? 
     </h4>
-</header>
+
   
 <img src="Images/Nebula.jpg" alt="Nebula" width="300" height="400">
 </section>
 
 <section>
 <hr>
-<header>
-    <h4>
+
+    <p>
         How About Some Cute Cat Posts? Have Some Free Serotonin.
-    </h4>
-</header>
+    </p>
+
 
 <img src="Images/CuteCat1.jpg" alt="CuteCat1" width="300" height="400"> 
 <br>
@@ -84,15 +113,6 @@
 <img src="Images/CuteCat4.jpg" alt="CuteCat4" width="300" height="400">
 </section>
 
- <a href="InformationPosts.html">Blogs Page</a> 
- <br>
- <br>
- <a href="AboutPage.html">About Page</a> 
- <br>
- <br>
- <a href="Home.html">Back To Home Page</a> 
- <br>
- <br>
- <a href="ContactInfo.html">Contact Information Page</a>
+ 
 </body>
 </html>
