@@ -1,7 +1,25 @@
 h1 {
     color:white;
-    font-family: "Times New Roman", Times, serif;   
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 100px;
   }
+  
+  h2 {
+    color:white;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  h3 {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h4 {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
   header{
     position: fixed;
     top: 0; 
@@ -52,5 +70,5 @@ h1 {
   }
 
   p{
-    color: white;;
+    color:white;
   }
