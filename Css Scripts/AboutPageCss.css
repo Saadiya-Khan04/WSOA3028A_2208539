@@ -27,50 +27,22 @@ h4 {
 }
 
 header{
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    transition: 0.6s;
-    
-  }
-  
-  header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-  }
-  
-  header ul li{
-    position: relative;
-    list-style: none;
-    
-  }
-  
-  header ul li a{
-    position: relative;
-    margin: 0 10px;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 10vh;
-    
-  }
-  
-  header.sticky{
-    background: firebrick;
-    width: 100%;
-  }
-  
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s;  
+}
 
+button{
+  background-color: black;
+  color:white; 
+  font-size: medium;
+  outline-color: white;
+  outline-width: 100px;
+}
 
 p {
     color: white; 
