@@ -3,7 +3,7 @@ h1 {
     color:black;
     font-family: "Times New Roman", Times, serif;
     background-color: white; 
-    width: 700px;
+    width: 350px;
     border: 15px solid red;;
     padding: 50px;
     margin: 5px;  
@@ -41,7 +41,7 @@ h1 {
 
   header ul li a{
     position: relative;
-    margin: 0 15px;
+    margin: 0 10px;
     color: white;
     letter-spacing: 2px;
     font-weight: 500px;
