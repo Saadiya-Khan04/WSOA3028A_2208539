@@ -1,19 +1,21 @@
 
 h1 {
-    color:black;
-    font-family: "Times New Roman", Times, serif;
-    background-color: white; 
-    width: 350px;
-    border: 15px solid red;;
-    padding: 50px;
-    margin: 5px;  
-    margin-top: 100px; 
-    display: flex;   
-  }
-  
+  color: white; 
+  font-family: "Times New Roman", Times, serif;
+  background-color:black;  
+  width: 25%; 
+  border: 15px solid red;
+  padding: 50px;
+  margin-top: 100px; 
+  margin-left: 30%;
+}
+
   h2 {
     color: white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: xx-large; 
+    margin-left: 20%;    
+    margin-top: 5%;
   }
 
   header{
@@ -22,15 +24,38 @@ h1 {
     left: 0;
     width: 100%;
     display: flex;   
-  }
+    justify-content: space-between; 
+    align-items: center;
+    transition: 0.6s;  
+    background-color: firebrick; 
+}
 
-  button{
-    background-color: black;
-    color:white; 
-    font-size: medium;
-    outline-color: white;
-    outline-width: 100px;
-  }
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.banner{
+    position: relative;
+    width: 100%;    
+}
 
   body {
     background-color: black;
@@ -40,17 +65,29 @@ h1 {
 
   p{
     color: firebrick;
+    font-size: x-large; 
+    margin-left: 15%; 
   }
 
-  @media screen and (max-width: 1008px) {
+  footer{
+    color: black; 
+    display: flexbox;
+    background-color: darkgrey; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+
+
+  @media screen and (max-width: 1080px) {
     #primary { width:100%; }   
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 720px) {
     #primary { width:100%; }      
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
     #primary { width:100%; }
 }
 

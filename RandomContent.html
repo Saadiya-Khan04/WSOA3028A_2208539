@@ -1,146 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css Scripts/RandomContent.Css">
+    <script src= "JavaScript/TabPanels.js"> </script>
+    <title>Content Page</title>
+</head>
 
-    <head>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Css Scripts/RandomContent.Css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src = "JavaScript/ButtonLinks.js"> </script> 
-
-    </head>
+<body>
 
     <header>
-    
-        <nav>
+        <ul>
+            <li><a href = "Home.html">Home Page</a></li>
+            <li><a href = "AboutPage.html">About Page</a></li>
+            <li><a href = "InformationPosts.html" rel="tag">Blogs</a></li>
+            <li><a href = "RandomContent.html">Content Page</a></li>
+            <li><a href = "vidContent.html">Vid Content</a></li>
+            <li><a href = "ApiContent.html">Cat Content</a></li>
+            <li><a href = "ContactPage.html">Contact Page</a></li>
+            <li><a href = "WhyandHow.html">Why Page</a></li>
+        </ul>
 
-            <button onclick="SwitchHome()">Home Page</button> 
-            <button onclick="SwitchAbout()">About Page</button>
-            <button onclick="SwitchInfo()">Info Page</button>
-            <button onclick="SwitchContent()">Content Page</button>
-            <button onclick="SwitchContact()">Contact Page</button>
-            <button onclick="SwitchWhy()">Why/How Page</button>
+    </header>   
 
-        </nav>
-        
-    </header>
-    
+    <main>
 
-  
+        <h1>
+            CONTENT
+        </h1>
 
-    <body>
-        <main>
-            <section>
-
-    
-                <h1>
-                    My Trash Content
-                </h1>
-            
-            
-                <hr>
-                <p>
-                !!! Disclaimer: I have just moved to this beautiful city, although I am trying to adjust to it. <br>
-                <br>
-                WATCH THIS SPACE! <br>
-                Soon, I will be uploading more of my adventures here and my blog will be up and running very soon!<br>
-                <br>
-                There will be more content where I actually explore Jhb and take some really cool pictures!
-                </p>
-                
-                
-                    <h2>
-                        My drawings:
-                    </h2>
-                
-                
-                <hr>
-                
-                    <p>
-                        Here is an INSANE digital sketch of Kaneki from Tokyo Ghoul. I traced something, although it was my first <br>
-                        attempt at a digital artwork.
-                    </p>
-                        
-                   
-               
-                <picture>
-
-                    <img src="Images/Kaneki drawing.jpg" alt="Kaneki" width="400" height="500">
-
-                </picture>
-                
-        </section> 
-        
-        <section>
-           
-                <h4>
-                    Let me share something else. How about a cool guy in mask? <br>
-                    Inspiration from my favourite band, "BRING ME THE HORIZON"!
-                </h4>
-            
-            <picture>
-
-                <img src="Images/Oli Sykes.png" alt="Oliver" width="400" height="500">
-
-            </picture>
-        
-        </section>
-        
-        <section>
-        
-            <h4>
-                A bit of a different art style, but a really trippy technique that I have learned <br>
-                through digital drawings. A Nebula, perhaps..? 
-            </h4>
-        
-        <picture>
-
-            <img src="Images/Nebula.jpg" alt="Nebula" width="400" height="500">
-
-        </picture>
-        
-        </section>
-
-        <section>
-           
-            <h4>
-               Here are some cool pictures that I took while exploring this city.
-            </h4>
-        
-        <picture>
-
-            <img src="Images/CityPic2.jpg" alt="City" width="300" height="400">
-            <img src="Images/CityPic3.jpeg" alt="City3" width="300" height="400">
-            <img src="Images/CityPic4.jpg" alt="City4" width="300" height="400">
-
-        </picture>
-    
-    </section>
-        
-        <section>
         <hr>
-        
-            <p>
-                How About Some Cute Cat Posts? Have Some Free Serotonin.
-            </p>
-        
-        <picture>
 
-            <img src="Images/CuteCat1.jpg" alt="CuteCat1" width="300" height="400"> 
-            <img src="Images/CuteCat2.jpg" alt="CuteCat2" width="300" height="400">
-            <img src="Images/CuteCat4.jpg" alt="CuteCat4" width="300" height="400">
+        <h2>
+         <u>My Art, Blogs and City Pictures:</u>  
+        </h2>
 
-        </picture>
-        
-        
-            <style>
-                img {
-                width: 100%;
-                height: auto;
-                }
-            </style>
+        <h3>Click on an Image and Scroll further down to view the image in full!</h3>
+
+        <section class = "banner"> </section>
+
+        <section style="text-align:center">
 
         </section>
-        </main>
-    </body>
+
+          <section class="row">
+
+            <section class="column">
+              <img src="Images/My Content/Kaneki drawing.jpg" alt="Kaneki Ken From Tokyo Ghoul, A digital art piece that 
+              I have been working on!" style="width:100%" onclick="myFunction(this);">   
+            </section>>
+
+            <section class="column">
+              <img src="Images/My Content/Oli Sykes.png" alt="Oliver Sykes from BMTH in Parasite Eve, 
+              One of my fave songs!" style="width:100%" onclick="myFunction(this);">     
+            </section>
+
+            <section class="column">
+              <img src="Images/Other Pics/Art Supplies.jpg" alt="Read My Blog!" style="width:100%" onclick="myFunction(this);">   
+              <a href = "Personal Blogs/Art Supplies.docx">Download Post</a>
+            </section>
+  
+            <section class="column">
+              <img src="Images/Cat Pics/blackcatgreeneyes.png" alt="Read My Blog!" style="width:100%" onclick="myFunction(this);">   
+              <a href = "Personal Blogs/I got a Cat.docx">Download Post</a>
+            </section>
+
+            <section class="column">
+              <img src="Images/Other Pics/31tQOz5QANL._AC_SY355_.jpg" alt="Read My Blog!" style="width:100%" onclick="myFunction(this);">   
+              <a href = "Personal Blogs/BMTH Concert .docx">Download Post</a>
+            </section>
+
+            <section class="column">
+              <img src="Images/Other Pics/Spiderman.jpg" alt="Read My Blog!" style="width:100%" onclick="myFunction(this);">   
+              <a href = "Personal Blogs/Marvel's Spider-man.docx">Download Post</a>
+            </section>
+
+            <section class="column">
+              <img src="Images/Jhb Pics/CityPic2.jpg" alt="I took this at dusk, while sitting in traffic. <br>
+              Traffic SUCKS!" style="width:100%" onclick="myFunction(this);">     
+            </section>
+
+            <section class="column">
+              <img src="Images/Jhb Pics/CityPic3.jpeg" alt="I heard you can go bungee jumping here. Or was it zipline? <br>
+              Either way, I'M DOWN!" style="width:100%" onclick="myFunction(this);">     
+            </section>
+
+            <section class="column">
+              <img src="Images/Jhb Pics/CityPic4.jpg" alt="The art and garffiti on random walls in JHB Central,
+              <br> It's close to campus. And each piece of art, it's absolutely beautiful!" style="width:100%" onclick="myFunction(this);">     
+            </section>
+
+           
+
+          </section>
+
+          <hr>
+
+          <section class="container">
+
+            <section onclick = "this.parentElement.style.display = 'none'" class = "closebtn"> &times; </section>
+
+            <img id="BigImg" style="width:100%">
+
+            <section id="imgtext"></section>
+
+          </section>       
+    </main>
+
+</body>
 </html>
