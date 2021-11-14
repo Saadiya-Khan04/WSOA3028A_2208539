@@ -22,7 +22,7 @@ h1 {
   h3{
     color:cadetblue; 
     text-align: center;
-    font-size: large;
+    font-size: 30px; 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
   }
   
@@ -75,11 +75,12 @@ h1 {
   
   
   body{
-    background-color: white; 
+    background-color: black;
+    margin-left: 20px;
   }
   
-  data ul {
-    color:blue;
+  picture{
+  margin-left: 40%
   }
   
   @media screen and (max-width: 1080px) {
@@ -93,6 +94,4 @@ h1 {
   @media screen and (max-width: 360px) {
     #primary { width:100%; }
   }
-  
-  
   

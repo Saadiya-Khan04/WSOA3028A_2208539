@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-axis@3"></script>
     <link rel="stylesheet" href="Css Scripts/Graphs.css">
-    <script src= "d3-7.1.0/package/dist/d3.min.js"> </script>
-    <script src= "JavaScript/DGraph.js"> </script>
     <title>Graphs Page</title>
 </head>
 
@@ -19,6 +19,8 @@
             <li><a href = "SolarFlares.html">Solar Flares</a></li>
             <li><a href = "Graphs.html">Graphs</a></li>
             <li><a href = "SpaceFacts.html">Space Facts</a></li>
+            <li><a href = "NASAInfo.html">NASA</a></li>
+            <li><a href = "Images.html">Hubble Images</a></li>
             <li><a href = "Blogs.html">Blogs</a></li>
             <li><a href = "WhyandHow.html">Why</a></li>
         </ul>
@@ -35,14 +37,23 @@
         <hr>
     </main>
 
-    <section>
-        <p>
-            No implementation of Graphs. I kept getting errors, I searched for solutions for 3 Days straight. 
-            My D3 works, but does not display any code that I give it. 
-        </p>
-    </section>
+   <section> 
+    <h2>Solar Flares:</h2>
 
+    <div id="app">
+        
+       <div id="chart">
+           <svg></svg>
+       </div> 
 
-    
+       <div id="data">
+        <ul></ul>
+       </div>
+    </div>
+
+    <script src= "JavaScript/DGraph.js"> </script>
+
+   </section>
+  
 </body>
 </html>

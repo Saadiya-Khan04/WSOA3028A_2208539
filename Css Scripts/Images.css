@@ -1,0 +1,148 @@
+h1 {
+    color: blue; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center; 
+    background-color:black;  
+    width: 20%; 
+    border: 10px dashed purple;
+    padding: 20px;
+    margin-top: 100px; 
+    margin-left: 38%;  
+  }
+  
+    header{
+      position: fixed;
+      top: 0; 
+      left: 0;
+      width: 100%;
+      display: flex;   
+      justify-content: space-between; 
+      align-items: center;
+      transition: 0.1s;  
+      background-image: url(https://lh3.googleusercontent.com/YGJ77qN9KiwctZgfqV8Bf3hNo0rZvcFaPKDTkvtS6kVbtwyCS80Pm6dpXzJCCLZE1Q);  
+  }
+  
+  header ul{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  header ul li{
+      position: relative;
+      list-style: none;
+  }
+  
+  header ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: white;  
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+  }
+  
+  .banner{
+      position: relative;
+      width: 100%;    
+  }
+  
+    body {
+      
+      background-color: black;
+      margin: 0; 
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;    
+    }
+
+    .Slide{
+     width: 700px;
+     height: 400px;
+     overflow: hidden;   
+    }
+
+    .Middle{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -20%);
+    }
+
+    .Nav{
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     transform: translateX(-50%); 
+     display: flex;
+    }
+
+    .bar{
+     width: 50px;
+     height: 10px;
+     border: 2px Solid white;
+     margin: 6px; 
+     cursor: pointer;
+     transition: 0.4s;
+    }
+
+    .bar:hover{
+     background: white;
+    }
+
+    input[name="Switch"]{
+     position: absolute;
+     visibility: hidden;
+    }
+
+    .Slides{
+     width: 500%;
+     height: 100%;
+     display: flex;
+    }
+
+    .Images{
+     width: 20%;
+     transition: 0.6s;
+    }
+
+    .Images img{
+     width: 100%;
+     height: 100%;   
+    }
+
+    #r1:checked ~ .I1{
+     margin-left: 0;
+    }
+
+    #r2:checked ~ .I1{
+        margin-left: -20%;
+    }
+
+    #r3:checked ~ .I1{
+        margin-left: -40%;
+    }
+
+    #r4:checked ~ .I1{
+        margin-left: -60%;
+    }
+
+    #r5:checked ~ .I1{
+        margin-left: -80%;
+    }
+  
+  @media screen and (max-width: 1080px) {
+      #primary { width:100%; }   
+  }
+  
+  @media screen and (max-width: 720px) {
+      #primary { width:100%; }      
+  }
+  
+  @media screen and (max-width: 360px) {
+      #primary { width:100%; }
+  }
