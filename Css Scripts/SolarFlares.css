@@ -12,6 +12,12 @@ h1 {
     margin-left: 33%;  
   }
 
+  h2 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-align: center;
+  }
 header{
     position: fixed;
     top: 0; 
@@ -57,10 +63,15 @@ body{
 }
 
 .Flares{
-    background-color: blueviolet; 
+    background-color: darkblue; 
     color: black;
     font-size: 30px;
     text-align: center;
+}
+
+p {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 

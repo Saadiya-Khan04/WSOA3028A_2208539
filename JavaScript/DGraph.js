@@ -1,17 +1,11 @@
-//const PlaceHolder = [
-    //{id: "1", date: "november", peaktime: "12"},
-    //{id: "2", date: "December", peaktime: "13"},
-    //{id: "3", date: "january", peaktime: "17"},
-    //{id: "4", date: "february", peaktime: "20"}, 
-//]; 
 
-//Fetch API
+
 async function getData() {
 
     const apiUrl = 'https://api.nasa.gov/DONKI/FLR?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=edpcJZECdLNrtxoA503TIHd8NtrhheSBW7lqT7vg'; 
     const apiData = await fetch(apiUrl);
     const apiJson = await apiData.json(); 
-    let PlaceHolder = apiJson.slice(0, 3);
+    let PlaceHolder = apiJson.slice(0, 5);
     console.log(PlaceHolder);
 
 
@@ -23,7 +17,7 @@ const Height = 400 - Padding.top - Padding.bottom;
 
 const chartCont = d3.select('svg')
 .attr('width', Width)
-.attr('height', Height + Padding.top + Padding.bottom)
+.attr('height', Height + Padding.top + Padding.bottom ) 
 ;
 
 const chart = chartCont.append('g');
@@ -33,7 +27,7 @@ const xScale = d3.scaleBand().rangeRound([0, Width]).padding(0.1);
 const yScale = d3.scaleLinear().range([Height, 0]); 
 
 //Create Domains
-xScale.domain(PlaceHolder.map((d) => d.date)); 
+xScale.domain(PlaceHolder.map((d) => d.beginTime)); 
 yScale.domain([0, d3.max(PlaceHolder, (d) => d.activeRegionNum)+1]); 
 
 function render() {
@@ -46,7 +40,7 @@ function render() {
     .classed('bar', true)
     .attr('width', xScale.bandwidth())
     .attr('height', data => Height - yScale(data.activeRegionNum))
-    .attr('x', data => xScale(data.date))
+    .attr('x', data => xScale(data.beginTime))
     .attr('y', data => yScale(data.activeRegionNum))
     ;
 
@@ -63,7 +57,7 @@ function render() {
     .enter()
     .append('text')
     .text(data => data.activeRegionNum)
-    .attr('x', data => xScale(data.date) + (xScale.bandwidth()/2))
+    .attr('x', data => xScale(data.beginTime) + (xScale.bandwidth()/2))
     .attr('y', data => yScale(data.activeRegionNum) -10)
     .attr('text-anchor', 'middle')
     .classed('label', true)
@@ -99,7 +93,7 @@ const dateList = d3.select('#data')
 //Add text
 
 dateList.append('span')
-.text(data => data.date)
+.text(data => data.beginTime)
 ;
 
 //Check Button 

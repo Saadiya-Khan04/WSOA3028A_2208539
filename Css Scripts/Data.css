@@ -1,3 +1,4 @@
+
 h1 {
   color: blue; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,12 +23,12 @@ h2{
 h3{
   color:cadetblue; 
   text-align: center;
-  font-size: 30px;
+  font-size: large;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
 header{
-  position: fixed;
+  position: absolute;
   top: 0; 
   left: 0;
   width: 100%;
@@ -62,21 +63,15 @@ header ul li a{
 }
 
 .banner{
-  position: relative;
+  position: fixed;
   width: 100%;    
 }
 
 p {
- color: black; 
+ color: white; 
   font-family: Arial, Helvetica, sans-serif; 
   text-align: center;
-  font-size: large; 
-  font-weight: 700;
-  width: 70%;
-  margin-left: 12%;
-  border: 10px solid gray;
-  padding: 20px;
-  background-color: darkslateblue;
+  font-size: 20px; 
 }
 
 
@@ -95,4 +90,45 @@ body{
 
 @media screen and (max-width: 360px) {
   #primary { width:100%; }
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292929; 
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

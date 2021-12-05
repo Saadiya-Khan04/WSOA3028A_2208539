@@ -78,6 +78,10 @@ h1 {
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
     font-size: large; 
+    width: 70%;
+    margin-left: 12%;
+    border: 10px solid gray;
+    padding: 20px;
   }
   
   
