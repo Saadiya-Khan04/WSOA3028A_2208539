@@ -22,6 +22,7 @@ function fetchData()
      <p>Date And Time:  ${flareInfo.beginTime } </p>
      <p>Flare ID:  ${flareInfo.flrID } </p>
      <p>Peak Time:  ${flareInfo.peakTime } </p>
+     <p>Active Region Number:  ${flareInfo.activeRegionNum } </p>
      </article>
      `;
     })

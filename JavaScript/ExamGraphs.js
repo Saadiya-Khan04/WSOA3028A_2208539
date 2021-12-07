@@ -1,5 +1,3 @@
-
-
 async function getData() {
 
     const apiUrl = 'https://api.nasa.gov/DONKI/FLR?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=edpcJZECdLNrtxoA503TIHd8NtrhheSBW7lqT7vg'; 
@@ -27,7 +25,7 @@ const xScale = d3.scaleBand().rangeRound([0, Width]).padding(0.1);
 const yScale = d3.scaleLinear().range([Height, 0]); 
 
 //Create Domains
-xScale.domain(PlaceHolder.map((d) => d.beginTime)); 
+xScale.domain(PlaceHolder.map((d) => d.endTime)); 
 yScale.domain([0, d3.max(PlaceHolder, (d) => d.activeRegionNum)+1]); 
 
 function render() {
@@ -40,7 +38,7 @@ function render() {
     .classed('bar', true)
     .attr('width', xScale.bandwidth())
     .attr('height', data => Height - yScale(data.activeRegionNum))
-    .attr('x', data => xScale(data.beginTime))
+    .attr('x', data => xScale(data.endTime))
     .attr('y', data => yScale(data.activeRegionNum))
     ;
 
@@ -57,7 +55,7 @@ function render() {
     .enter()
     .append('text')
     .text(data => data.activeRegionNum)
-    .attr('x', data => xScale(data.beginTime) + (xScale.bandwidth()/2))
+    .attr('x', data => xScale(data.endTime) + (xScale.bandwidth()/2))
     .attr('y', data => yScale(data.activeRegionNum) -10)
     .attr('text-anchor', 'middle')
     .classed('label', true)
@@ -93,7 +91,7 @@ const dateList = d3.select('#data')
 //Add text
 
 dateList.append('span')
-.text(data => data.beginTime)
+.text(data => data.endTime)
 ;
 
 //Check Button 
@@ -117,5 +115,3 @@ dateList.append('input')
 }
 
 getData();
-
-
